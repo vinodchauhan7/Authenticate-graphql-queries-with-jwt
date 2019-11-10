@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "salt.db.elephantsql.com",
+    "port": 5432,
+    "username": "rnanmmhf",
+    "password": "s2bWYAapvG_zfJTwt36SSiU0MmInxw8F",
+    "database": "rnanmmhf",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/entity/**/*.ts"
+    ],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    }
+}
